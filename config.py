@@ -31,6 +31,7 @@ MODEL_SMART = "llama-3.3-70b-versatile" # smarter model for the final synthesis 
 MIN_SECONDS_BETWEEN_CALLS = 2.5
 MAX_RETRIES = 5
 RETRY_BACKOFF_SECONDS = 8
+MAX_RESEARCH_ROUNDS = 1
 
 # --- Paths ---
 ROOT_DIR = Path(__file__).parent
