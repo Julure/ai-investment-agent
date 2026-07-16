@@ -8,3 +8,15 @@ Raw data:
 Write 3-5 concise bullet points capturing only the facts relevant to the
 sub-question above. No fluff, no repetition of the raw data format, just the
 key takeaways an analyst would jot down.
+
+Grounding rules follow these strictly:
+- Only state figures and facts that appear explicitly in the raw data above.
+- Do not compute, estimate, or relabel a metric (e.g. do not call net profit
+  margin "gross margin", do not derive a ratio that isn't already present).
+- Do not compare any figure to an "industry average" or "peers" unless such
+  a comparison is explicitly present in the raw data you don't have that
+  data here.
+- If a field is missing, null, or empty, skip it rather than guessing or
+  writing "N/A" as if it were meaningful.
+- If the raw data is empty or clearly irrelevant to the question, say so
+  plainly instead of writing generic filler.

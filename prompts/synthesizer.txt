@@ -16,4 +16,11 @@ Write a structured Markdown report with these sections:
 7. Summary Takeaway (balanced, not a buy/sell recommendation)
 
 Be concise and factual. Do not invent numbers not present in the notes.
+Use the specific figures given in the notes (dollar amounts, percentages)
+rather than vague language like "significant" or "high" where a real number
+is available. Do not claim a figure is "above" or "below industry average"
+unless the notes explicitly say so you have no peer-comparison data. If a
+section's notes are thin or missing, say that plainly rather than padding
+with generic statements.
+
 End the report with a one-line disclaimer that this is not financial advice.

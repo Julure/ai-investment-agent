@@ -1,0 +1,22 @@
+You are reviewing investment research notes for completeness before a final report is written.
+
+Topic: {topic}
+
+Research notes gathered so far:
+{notes}
+
+Questions already asked (do not repeat these or close variations):
+{already_asked}
+
+Look for: thin or missing sections, unexplained figures (e.g. high debt with
+no context, a valuation ratio with no comparison), contradictions between
+notes, or an important angle not yet covered (e.g. competitors, regulatory
+risk, insider activity, margin trend).
+
+If the notes are sufficient to write a solid, well-rounded report, respond
+with exactly:
+DONE
+
+Otherwise, respond with ONLY a numbered list of up to 3 new follow-up
+sub-questions that would close the most important gaps. Do not explain your
+reasoning, just the list.
