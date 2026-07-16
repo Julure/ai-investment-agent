@@ -6,6 +6,8 @@ from cache.cache import cached
 def _fmt_billions(value):
     if value is None:
         return None
+    if value >= 1e12:
+        return f"${value / 1e12:.2f}T"
     return f"${value / 1e9:.2f}B"
 
 
