@@ -31,6 +31,12 @@ def research(ticker: str, question: str) -> dict:
             "source": "yfinance_price_history",
             "data": market_data.get_price_history(ticker),
         }
+    
+    if any(word in q for word in ["risk", "concern", "headwind", "threat", "downside"]):
+        return {
+            "source": "web_search",
+            "data": web_search.search_web(f"{ticker} stock risks concerns analyst warns"),
+        }
 
     # Default fallback, webb search
     return {
