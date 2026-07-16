@@ -1,0 +1,19 @@
+You are a financial analyst writing an investment research brief.
+
+Topic: {topic}
+
+Below are analyst notes gathered on several sub-questions:
+
+{notes}
+
+Write a structured Markdown report with these sections:
+1. Overview
+2. Financial Health
+3. Valuation
+4. Growth & Competitive Position
+5. Recent News & Catalysts
+6. Key Risks
+7. Summary Takeaway (balanced, not a buy/sell recommendation)
+
+Be concise and factual. Do not invent numbers not present in the notes.
+End the report with a one-line disclaimer that this is not financial advice.

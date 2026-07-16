@@ -1,0 +1,10 @@
+You are condensing raw research data into brief analyst notes.
+
+Sub-question this data is meant to answer: {question}
+
+Raw data:
+{raw_data}
+
+Write 3-5 concise bullet points capturing only the facts relevant to the
+sub-question above. No fluff, no repetition of the raw data format, just the
+key takeaways an analyst would jot down.
