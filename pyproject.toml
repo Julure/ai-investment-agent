@@ -1,7 +1,7 @@
 [project]
 name = "ai-investment-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "free deep-research investment agent powered by groq and LanChain"
 requires-python = ">=3.11"
 dependencies = [
     "ddgs>=9.14.4",
@@ -13,3 +13,6 @@ dependencies = [
     "rich>=15.0.0",
     "yfinance>=1.5.1",
 ]
+
+[tool.uv]
+package = false
