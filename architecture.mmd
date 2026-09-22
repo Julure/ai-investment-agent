@@ -1,0 +1,26 @@
+flowchart TD
+    CLI["main.py - CLI: Topic + Ticker"] --> P["planner.py - Plans 4-5 sub-questions (fast model)"]
+    P --> R["researcher.py - Keyword tool routing, no LLM call"]
+
+    R --> Y["tools/market_data.py - yfinance"]
+    R --> S["tools/sec_filings.py - SEC EDGAR"]
+    R --> W["tools/web_search.py - DuckDuckGo"]
+
+    Y --> SUM["summarizer.py - Raw data to notes, flat dicts skip the LLM"]
+    S --> SUM
+    W --> SUM
+
+    SUM --> C{"critic.py - Gaps in the notes?"}
+    C -->|"Follow-up questions, set at max 1 round"| R
+    C -->|"DONE"| SYN["synthesizer.py - Structured report, smart model"]
+
+    SYN --> OUT["reports/TICKER_DATE.md"]
+
+    Y -.-> DB[("cache/cache.sqlite3 - SHA256 key-value store")]
+    S -.-> DB
+    W -.-> DB
+
+    LLM["agent/llm.py - Pacing + retry/backoff"] -.-> P
+    LLM -.-> SUM
+    LLM -.-> C
+    LLM -.-> SYN
