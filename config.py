@@ -1,8 +1,3 @@
-"""Main configuration and connections
-- rate limit
-- model names
-- paths """
-
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -22,7 +17,7 @@ if not GROQ_API_KEY:
 
 # --- Models ---
 
-MODEL_FAST = "llama-3.1-8b-instant" #query generation and condensing raw source data 
+MODEL_FAST = "llama-3.1-8b-instant" #query generation and condensing raw source data
 
 MODEL_SMART = "llama-3.3-70b-versatile" # smarter model for the final synthesis step with reasoning
 

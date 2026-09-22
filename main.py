@@ -16,19 +16,6 @@ def run(topic: str, ticker: str) -> str:
         questions = planner.plan(topic)
         asked_all = list(questions)
         notes = []
-    #     progress.update(task, description=f"Planned {len(questions)} sub-questions")
-
-    #     notes = []
-    #     for q in questions:
-    #         progress.update(task, description=f"Researching: {q[:60]}...")
-    #         raw = researcher.research(ticker, q)
-
-    #         progress.update(task, description=f"Summarizing: {q[:60]}...")
-    #         note = summarizer.summarize(q, raw["data"])
-    #         notes.append((q, note))
-
-    #     progress.update(task, description="Synthesizing final report...")
-    #     report = synthesizer.synthesize(topic, notes)
 
     # return report
         for round_num in range(config.MAX_RESEARCH_ROUNDS + 1):
